@@ -27,7 +27,7 @@ public class TestMain {
             long milSec = T.sumarHoras(fechaActual, fechaHora);
             JOptionPane.showMessageDialog(null, "Actual: " + fechaActualFor + "\nIngresada: " + fechaHoraIng + "\nHan pasado:"
                     + milSec + " milisegundos\n" +"Tiempo: "+T.formatoHoras(milSec));
-        } catch (ParseException ex) {
+        } catch (ParseException e) {
             JOptionPane.showMessageDialog(null, "Fecha erronea");
         }
     }
